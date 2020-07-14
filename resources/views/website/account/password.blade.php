@@ -1,0 +1,153 @@
+@extends('website.master')
+
+@section('title')
+{{ucwords($page_title)}}
+@endsection
+
+@section('main_content')
+<section class="pt-3 pb-3 page-info section-padding border-bottom bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {!! $breadcrumb_menu !!} <span class="mdi mdi-chevron-right"></span><a href="">{{$page_title}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="account-page section-padding">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-12 mx-auto">
+             <div class="row no-gutters">
+                <div class="col-md-3">
+                   <div class="card account-left">
+                      <div class="user-profile-header">
+                         <img alt="logo" src="{{asset(CUSTOMER_PROFILE_PHOTO.'user.png')}}">
+                         <h5 class="mb-1 text-secondary"><strong>Hi </strong> {{Auth::guard('customer')->user()->first_name}}&nbsp;{{Auth::guard('customer')->user()->last_name}}</h5>
+                         <p>{{Auth::guard('customer')->user()->mobile}}</p>
+                      </div>
+                      <div class="list-group">
+                         <a href="{{url('/account/profile') }}" class="list-group-item list-group-item-action"><i aria-hidden="true" class="mdi mdi-account-outline"></i>  My Profile</a>
+                         <a href="{{url('/account/address') }}" class="list-group-item list-group-item-action"><i aria-hidden="true" class="mdi mdi-map-marker-circle"></i>  My Address</a>
+                         <a href="{{url('/account/password-change') }}" class="list-group-item list-group-item-action active"><i aria-hidden="true" class="mdi mdi-account-key"></i>  Password Change</a>
+                         <a href="{{url('/account/order-history') }}" class="list-group-item list-group-item-action"><i aria-hidden="true" class="mdi mdi-format-list-bulleted"></i>  Order History</a> 
+                         <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="list-group-item list-group-item-action"><i aria-hidden="true" class="mdi mdi-lock"></i>  Logout</a>
+                         <form id="logout-form" action="{{url('/account-logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form> 
+                      </div>
+                   </div>
+                </div>
+
+                <?php //dd(Auth::guard('customer')->user()->first_name); ?>
+
+                <div class="col-md-9">  
+                   <div class="card card-body account-right">
+                    <div class="widget">
+                         <div class="section-header">
+                            <h5 class="heading-design-h5">
+                                 {{$page_title}}
+                            </h5>
+                         </div>
+                         <form id="password_reset_form" method="POST" >
+                           @csrf
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group col-sm-8 required">
+                                     <label class="control-label">Password</label>
+                                     <input class="form-control border-form-control" name="password" type="password">
+                                     <span class="error error_password text-danger"></span>
+                                  </div>
+                               </div>
+                               <div class="col-sm-12">
+                                  <div class="form-group col-sm-8 required">
+                                     <label class="control-label">Confirm Password</label>
+                                     <input class="form-control border-form-control" name="password_confirmation" type="password">
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="row">
+                               <div class="col-sm-12 text-right">
+                                  <button type="button" id="save-btn" class="btn btn-secondary btn-lg"> Save Changes </button>
+                               </div>
+                            </div>
+                         </form>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+ <script>
+$('#save-btn').click(function() {
+    // ajax adding data to database
+    $.ajax({
+         url: "{{url('account/password-update')}}",
+         type: "POST",
+         data: $('#password_reset_form').serialize(),
+         dataType: "JSON",
+         beforeSend: function () {
+            $('#save-btn').addClass('m-loader m-loader--light m-loader--left');
+         },
+         complete: function() {
+            $('#save-btn').removeClass('m-loader m-loader--light m-loader--left');
+         },
+         success: function(data) {
+            if (data.success) {
+               toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": true,
+                "progressBar": false,
+                "positionClass": "toast-bottom-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "500",
+                "timeOut": "2000",
+                "extendedTimeOut": "500",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "slideDown",
+                "hideMethod": "slideUp"
+            };
+            toastr.success(data.success);
+            $("#password_reset_form").find('.error').text('');
+            $("#password_reset_form")[0].reset();
+            } else {
+
+                $("#password_reset_form").find('.error').text('');
+                console.log(data.errors);
+                $.each(data.errors, function(key, value) {
+                    $('#password_reset_form .form-group').find('.error_' +
+                        key).text(value);
+                });
+
+            }
+
+
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('Error adding / update data');
+        }
+    });
+});
+      
+ </script>
+
+ 
+@endsection
+
+
+
+
+
+@section('script')
+
+@endsection

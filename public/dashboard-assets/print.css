@@ -1,0 +1,407 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+.col-lg-12{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+@media (min-width:992px) {
+    .col-lg-12 {
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+}
+.m-invoice__text b{
+    float: left !important;
+}
+.m-invoice__text b:after{
+    content: ':';
+    
+}
+.m-invoice__text.one b:after{
+    margin-left: 32px;
+}
+.m-invoice__text.two b:after{
+    margin-left: 15px;
+}
+.m-invoice__text.three b:after{
+    margin-left: 14px;
+}
+.m-invoice__text.four b:after{
+    margin-left: 4px;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.m-portlet {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
+
+.m-portlet .m-portlet__body {
+    padding: 2.2rem 2.2rem
+    /* padding: 0 !important; */
+}
+.m-portlet .m-portlet__body.m-portlet__body--no-padding {
+    padding: 0;
+}
+.m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__head .m-invoice__container {
+    padding: 0;
+}
+
+.m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__head .m-invoice__container.m-invoice__container--centered {
+    width: 100%;
+}
+
+.m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__body {
+    padding: 2rem 0 0 0;
+}
+
+.m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__body.m-invoice__body--centered {
+    width: 100%;
+}
+
+.m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__footer .m-invoice__table {
+    padding: 0;
+}
+
+.m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__footer .m-invoice__table.m-invoice__table--centered {
+    width: 100%;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container {
+    padding: 0 5rem 0 5rem;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container.m-invoice__container--centered {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__logo {
+    display: table;
+    width: 100%;
+    padding-top: 0 !important;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__logo>a {
+    display: table-cell;
+    text-decoration: none;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__logo>a>h1 {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__logo>a:last-child {
+    text-align: right;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__logo>a:first-child {
+    vertical-align: top;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__desc {
+    text-align: right;
+    display: block;
+    padding: 1rem 0 4rem 0;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__desc>span {
+    display: block
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__items {
+    display: table;
+    width: 100%;
+    padding: 2rem 0 3rem 0;
+    table-layout: fixed;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__items .m-invoice__item {
+    display: table-cell;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__items .m-invoice__item .m-invoice__subtitle {
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__items .m-invoice__item>span {
+    display: block;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body {
+    padding: 2rem 5rem 0 5rem;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body.m-invoice__body--centered {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0 0 0;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table thead tr th {
+    padding: 1rem 0 .5rem 0;
+    border-top: none;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table thead tr th:not(:first-child) {
+    text-align: right;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table tbody tr td {
+    padding: 1rem 0 1rem 0;
+    vertical-align: middle;
+    border-top: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table tbody tr td:not(:first-child) {
+    text-align: right;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table tbody tr:first-child td {
+    padding-top: 1.8rem;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__footer {
+    margin-top: 9rem;
+    padding: 5rem 0 7rem 0;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table {
+    padding: 0 5rem 0 5rem;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table.m-invoice__table--centered {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table table thead tr th {
+    padding: 1rem 0 .5rem 0;
+    border-top: none;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table table thead tr th:last-child {
+    text-align: right;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table table tbody tr td {
+    padding: 1.8rem 0 0 0;
+    vertical-align: middle;
+    border-top: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table table tbody tr td:last-child {
+    text-align: right;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+}
+
+@media (max-width:768px) {
+    .m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__head .m-invoice__container {
+        padding: 0;
+    }
+    .m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__head .m-invoice__container.m-invoice__container--centered {
+        width: 100%;
+        padding: 0;
+    }
+    .m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__body {
+        padding: 2rem 0 0 0;
+    }
+    .m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__body.m-invoice__body--centered {
+        width: 100%;
+        padding: 0;
+    }
+    .m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__footer {
+        padding: 3rem 0 4rem 0;
+    }
+    .m-invoice-2.m-invoice-2--fit .m-invoice__wrapper .m-invoice__footer .m-invoice__table.m-invoice__table--centered {
+        width: 100%;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container {
+        width: 100% !important;
+        padding: 0 2rem 0 2rem;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container.m-invoice__container--centered {
+        padding: 0 2rem 0 2rem;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__logo {
+        padding-top: 4rem;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__logo>a {
+        width: 100%;
+        display: block;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__logo>a:last-child {
+        padding-top: 1rem;
+        text-align: left;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__desc {
+        text-align: left;
+        padding-bottom: 2rem;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__items {
+        padding: 2rem 0 2rem 0;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__items .m-invoice__item {
+        width: 100%;
+        display: block;
+        padding-bottom: 2rem;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__items .m-invoice__item:not(:first-child) {
+        padding-left: 0;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__body {
+        width: 100% !important;
+        padding: 0 2rem 0 2rem;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__body.m-invoice__body--centered {
+        padding: 0 2rem 0 2rem;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__body table thead tr th:not(:first-child) {
+        padding-right: 1.5rem;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__body table thead tr th:last-child {
+        padding-right: 0;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__body table tbody tr td:not(:first-child) {
+        padding-right: 1.5rem;
+        vertical-align: top;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__body table tbody tr td:last-child {
+        padding-right: 0;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__footer {
+        margin-top: 4rem;
+        padding: 3rem 2rem 4rem 2rem;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table.m-invoice__table--centered {
+        width: 100%;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table table thead tr th {
+        vertical-align: top;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table table thead tr th:not(:first-child) {
+        padding-left: 2rem;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table table tbody tr td {
+        vertical-align: top;
+    }
+    .m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table table tbody tr td:not(:first-child) {
+        padding-left: 2rem;
+        vertical-align: top;
+    }
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__logo>a>h1 {
+    color: #3f4047;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__items {
+    border-top: 1px solid #ebedf2;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table thead tr th {
+    color: #898b96;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__body table tbody tr td {
+    color: #6f727d;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__footer {
+    background-color: #f7f8fa;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table table thead tr th {
+    color: #898b96;
+    border-bottom: 1px solid #e2e5ec;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__footer .m-invoice__table table tbody tr td {
+    color: #6f727d;
+}
+@media screen {
+    .no_screen{
+	display:none;
+    }
+    
+    .no_print
+    {
+	display: block;
+    }
+    .amount_due
+    {
+	font-size: 20px;
+	font-family: inherit;
+	font-weight: 400;
+    }
+    
+}
+@media print {
+
+    .no_screen {
+	display: block !important;
+    }
+     .no_print
+    {
+	display: none;
+    }
+    .p-xl
+    {
+	padding: 0;
+    }
+    .print-invoice
+    {
+	margin-top: -35px;
+    }
+    .amount_due
+    {
+	font-size: 20px;
+	font-family: inherit;
+	font-weight: 400;
+	color: red;
+	display: none;
+    }
+    
+    .invoice_footer
+    {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+    }
+    .document-section{
+        display:none;
+    }
+
+    /*to avoid printing blank page*/
+    html, body {
+        border: 1px solid white;
+        height: 99%;
+        page-break-after: avoid;
+        page-break-before: avoid;
+    }
+    a[href]:after {
+        content: none !important;
+    }
+ 
+}
+@page { size: auto;  margin: 0mm; } /*to hide page url, page number and datetime*/

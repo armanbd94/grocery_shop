@@ -1,0 +1,38 @@
+<svg class="ldi-6jirrf" width="200px"  height="200px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;"><!--?xml version="1.0" encoding="utf-8"?--><!--Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)--><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="transform-origin: 50px 50px 0px;" xml:space="preserve"><g style="transform-origin: 50px 50px 0px;"><g style="transform-origin: 50px 50px 0px; transform: scale(0.6);"><g style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -1s; animation-direction: normal;" class=""><g><g style="transform-origin: 50px 50px 0px;"><g><g style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -1s; animation-direction: normal;" class="ld ld-breath"><path style="fill: none; stroke: rgb(233, 97, 37); stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10;" d=" M35.214,89.83H23.625C16.1,89.83,10,83.729,10,76.204V24.751h54.41v6.637" stroke="#e96125"></path></g><g style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.9375s; animation-direction: normal;" class="ld ld-breath"><path style="fill: none; stroke: rgb(233, 97, 37); stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10;" d=" M23.514,34.708V23.862c0-7.562,6.13-13.691,13.691-13.691h0c7.562,0,13.691,6.13,13.691,13.691v10.846" stroke="#e96125"></path></g><g style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.875s; animation-direction: normal;" class="ld ld-breath"><line style="fill: none; stroke: rgb(233, 97, 37); stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10;" x1="19.468" y1="74.805" x2="39.197" y2="74.805" stroke="#e96125"></line></g></g></g><g style="transform-origin: 50px 50px 0px;"><g><g style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.8125s; animation-direction: normal;" class="ld ld-breath"><polygon style="fill: none; stroke: rgb(233, 97, 37); stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10;" points=" 90,89.683 44.537,89.683 51.693,52.753 82.845,52.753 	" stroke="#e96125"></polygon></g><g style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.75s; animation-direction: normal;" class="ld ld-breath"><path style="fill: none; stroke: rgb(233, 97, 37); stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10;" d=" M59.045,59.324V49.278c0-4.542,3.682-8.224,8.224-8.224h0c4.542,0,8.224,3.682,8.224,8.224v10.046" stroke="#e96125"></path></g></g></g><metadata xmlns:d="https://loading.io/stock/" style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.6875s; animation-direction: normal;" class="ld ld-breath">
+<d:name style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.625s; animation-direction: normal;" class="ld ld-breath">shopping</d:name>
+<d:tags style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.5625s; animation-direction: normal;" class="ld ld-breath">shopping,purchase,buy,consumption,department store,cart,checkout,bag,on sale</d:tags>
+<d:license style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.5s; animation-direction: normal;" class="ld ld-breath">cc-by</d:license>
+<d:slug style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.4375s; animation-direction: normal;" class="ld ld-breath">6jirrf</d:slug>
+</metadata></g></g></g></g><style type="text/css" style="transform-origin: 50px 50px 0px; animation-duration: 1s; animation-delay: -0.375s; animation-direction: normal;" class="ld ld-breath">@keyframes ld-breath {
+  0% {
+    -webkit-transform: scale(0.86);
+    transform: scale(0.86);
+  }
+  50% {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+  }
+  100% {
+    -webkit-transform: scale(0.86);
+    transform: scale(0.86);
+  }
+}
+@-webkit-keyframes ld-breath {
+  0% {
+    -webkit-transform: scale(0.86);
+    transform: scale(0.86);
+  }
+  50% {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+  }
+  100% {
+    -webkit-transform: scale(0.86);
+    transform: scale(0.86);
+  }
+}
+.ld.ld-breath {
+  -webkit-animation: ld-breath 1s infinite;
+  animation: ld-breath 1s infinite;
+}
+</style></svg></svg>
